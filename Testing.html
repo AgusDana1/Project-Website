@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="testing.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- Konten utama dari codingan yang akan tampil di website -->
+
+    <!-- Tombol untuk membuka modal login -->
+    <button onclick="document.getElementById('id01').style.display='block'">
+      Login
+    </button>
+    <!-- Tombol ini mengaktifkan modal dengan mengubah properti display modal menjadi 'block' saat tombol diklik -->
+
+    <!-- Modal (jendela pop-up untuk login) -->
+    <div id="id01" class="modal">
+      <!-- Membuat div dengan id 'id01' dan class dengan nama 'modal' yang mewakili modal yang akan muncul saat tombol Login diklik -->
+
+      <span
+        onclick="document.getElementById('id01').style.display='none'"
+        class="close"
+        title="Close Modal"
+        >&times;</span
+      >
+      <!-- Span berfungsi sebagai tombol 'Close' untuk menutup modal.
+           Saat diklik, display modal diubah menjadi 'none' (modal akan tersembunyi).
+           Karakter '&times;' menampilkan simbol X untuk ikon penutupan. -->
+
+      <!-- Isi modal berupa form login -->
+      <form class="modal-content animate" action="../Pakunggah/index.html">
+        <!-- Form dengan class 'modal-content' dan 'animate' untuk menampilkan efek animasi.
+             Form ini akan dikirim ke URL "../Pakunggah/index.html" saat tombol login diklik. -->
+
+        <div class="imgcontainer">
+          <!-- Container untuk gambar avatar pengguna -->
+          <img src="img/Rayhan.jpg" alt="Avatar" class="avatar" />
+          <!-- Gambar avatar yang diambil dari 'img/Rayhan.jpg', dengan class 'avatar' untuk menyesuaikan ukuran. -->
+        </div>
+
+        <div class="container">
+          <!-- membuat div class dengan nama container -->
+
+          <label for="uname"><b>Username</b></label>
+          <!-- Label untuk input username dengan teks tebal (bold) -->
+
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="uname"
+            required
+          />
+          <!-- Input teks untuk username, dengan placeholder 'Enter Username'. Atribut 'required' memastikan pengguna harus mengisi kolom ini. -->
+
+          <label for="psw"><b>Password</b></label>
+          <!-- Label untuk input password dengan teks tebal (bold) -->
+
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+          <!-- Input password, dengan placeholder 'Enter Password'. Atribut 'required' memastikan pengguna harus mengisi kolom ini. -->
+
+          <button type="submit">Login</button>
+          <!-- Tombol untuk mengirimkan form dengan teks 'Login'. Form akan dikirim ke action URL yang ditentukan di tag <form>. -->
+
+          <label>
+            <input type="checkbox" checked="checked" name="remember" /> Remember
+            me
+          </label>
+          <!-- Checkbox untuk pilihan 'Remember me' yang dicentang secara default. -->
+        </div>
+
+        <div class="container" style="background-color: #f1f1f1">
+          <!-- membentuk div class Container untuk tombol 'Cancel' dan teks 'Forgot password?', dengan latar belakang abu-abu terang -->
+
+          <button
+            type="button"
+            onclick="document.getElementById('id01').style.display='none'"
+            class="cancelbtn"
+          >
+            Cancel
+          </button>
+          <!-- Tombol 'Cancel' untuk menutup modal. Mengubah display modal menjadi 'none' saat tombol diklik. -->
+
+          <span class="psw">Forgot <a href="#">password?</a></span>
+          <!-- Teks 'Forgot password?' dengan link (untuk diarahkan ke halaman yang relevan, namun saat ini mengarah ke '#' atau tidak mengarah kemana-mana). -->
+        </div>
+      </form>
+    </div>
+
+    <script src="testing.js"></script>
+    <!-- Menghubungkan file JavaScript eksternal 'testing.js' -->
+  </body>
+</html>

@@ -1,0 +1,200 @@
+/* Style untuk form */
+form {
+  border: 3px solid #f1f1f1;
+  /* Menambahkan border 3px berwarna abu-abu muda di sekitar form */
+}
+
+/* Full-width inputs */
+input[type="text"],
+/* Menambahkan input elemen dan berisi data bertipe text */
+input[type="password"] {
+  /* Menambahkan input elemen dan berisi data bertipe password */
+  width: 100%;
+  /* Mengatur lebar input menjadi 100% dari elemen induk (container) */
+  padding: 12px 20px;
+  /* Menambahkan padding: 12px pada atas/bawah, 20px pada kiri/kanan */
+  margin: 8px 0;
+  /* Menambahkan margin vertikal 8px */
+  display: inline-block;
+  /* Menampilkan elemen dalam satu baris */
+  border: 1px solid #ccc;
+  /* Menambahkan border 1px berwarna abu-abu di sekitar input */
+  box-sizing: border-box;
+  /* Memastikan padding dan border termasuk dalam lebar total elemen */
+}
+
+/* mengatur style dari button */
+button {
+  background-color: #04aa6d;
+  /* Mengatur warna latar belakang tombol menjadi hijau */
+  color: white;
+  /* Mengatur warna teks tombol menjadi putih */
+  padding: 14px 20px;
+  /* Menambahkan padding: 14px pada atas/bawah, 20px pada kiri/kanan */
+  margin: 8px 0;
+  /* Menambahkan margin vertikal 8px */
+  border: none;
+  /* Menghilangkan border tombol */
+  cursor: pointer;
+  /* Mengubah kursor menjadi pointer saat diarahkan ke tombol */
+  width: 100%;
+  /* Membuat tombol selebar 100% dari elemen induk */
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+  /* Menurunkan opacity tombol menjadi 0.8 saat diarahkan (hover) */
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  /* Mengatur lebar tombol sesuai dengan isinya (tidak 100%) */
+  padding: 10px 18px;
+  /* Menambahkan padding: 10px pada atas/bawah, 18px pada kiri/kanan */
+  background-color: #f44336;
+  /* Mengatur warna latar belakang tombol Cancel menjadi merah */
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  /* Menyelaraskan gambar avatar ke tengah secara horizontal */
+  margin: 24px 0 12px 0;
+  /* Menambahkan margin: 24px pada atas, 12px pada bawah */
+}
+
+/* Avatar image */
+img.avatar {
+  width: 10%;
+  /* Mengatur lebar gambar avatar menjadi 10% dari elemen induk */
+  border-radius: 20%;
+  /* Membuat gambar berbentuk bulat dengan border-radius 20% */
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  /* Menambahkan padding 16px di semua sisi container */
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  /* Membuat teks "Forgot password" mengapung di sisi kanan */
+  padding-top: 16px;
+  /* Menambahkan padding 16px di bagian atas */
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  /* Media query untuk layar dengan lebar maksimum 300px */
+
+  span.psw {
+    display: block;
+    /* Menampilkan elemen sebagai blok penuh */
+    float: none;
+    /* Menghilangkan efek float */
+  }
+
+  .cancelbtn {
+    width: 100%;
+    /* Mengubah lebar tombol Cancel menjadi 100% pada layar kecil */
+  }
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Menyembunyikan modal secara default */
+  position: fixed;
+  /* Membuat modal tetap di tempatnya saat halaman di-scroll */
+  z-index: 1;
+  /* Menetapkan modal berada di atas elemen lainnya */
+  left: 0;
+  /* Memulai posisi modal dari sisi kiri halaman */
+  top: 0;
+  /* Memulai posisi modal dari sisi atas halaman */
+  width: 100%;
+  /* Mengatur modal selebar halaman penuh */
+  height: 100%;
+  /* Mengatur modal setinggi halaman penuh */
+  overflow: auto;
+  /* Menambahkan kemampuan scroll jika konten modal terlalu panjang */
+  background-color: rgb(0, 0, 0);
+  /* Memberikan latar belakang hitam fallback */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Menambahkan efek latar belakang hitam dengan sedikit transparansi */
+  padding-top: 60px;
+  /* Menambahkan padding atas 60px untuk membuat ruang di atas modal */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  /* Memberikan latar belakang putih pada konten modal */
+  margin: 5px auto;
+  /* Memberikan margin atas/bawah 5px dan center (kiri/kanan auto) */
+  border: 1px solid #888;
+  /* Memberikan border abu-abu 1px di sekitar konten modal */
+  width: 80%;
+  /* Mengatur lebar konten modal menjadi 80% dari halaman */
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  /* Mengatur posisi tombol "Close" secara absolut di dalam modal */
+  right: 25px;
+  /* Menempatkan tombol 25px dari sisi kanan modal */
+  top: 0;
+  /* Menempatkan tombol di bagian atas modal */
+  color: #000;
+  /* Memberikan warna teks hitam pada tombol "Close" */
+  font-size: 35px;
+  /* Mengatur ukuran font menjadi 35px */
+  font-weight: bold;
+  /* Mengatur font tombol menjadi tebal */
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  /* Mengubah warna tombol "Close" menjadi merah saat di-hover atau difokuskan */
+  cursor: pointer;
+  /* Menampilkan kursor pointer saat diarahkan ke tombol */
+}
+
+/* Memanggil class dari Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  /* Menambahkan animasi zoom dengan durasi 0.6s untuk browser WebKit */
+  animation: animatezoom 0.6s;
+  /* Menambahkan animasi zoom dengan durasi 0.6s untuk browser lainnya */
+}
+
+/* Menambahkan animasi zoom menggunakan webkit keyframes  */
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+    /* Memulai animasi zoom dari skala 0 (sangat kecil) */
+  }
+  to {
+    -webkit-transform: scale(1);
+    /* Animasi berakhir dengan skala 1 (ukuran penuh) */
+  }
+}
+
+/* Menambahkan keyframes untuk animasi */
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+    /* Memulai animasi zoom dari skala 0 (sangat kecil) */
+  }
+  to {
+    transform: scale(1);
+    /* Animasi berakhir dengan skala 1 (ukuran penuh) */
+  }
+}
